@@ -1,0 +1,149 @@
+:root {
+	--menu-delay: .3s;
+}
+/*************************************
+   HAMBURGER MENU 
+*************************************/
+@media (max-width: 414px) {
+	/* quando fanno click nel hamburger, nascondo/mostro il menu */
+	header {
+		position: relative;
+		padding-top: 20px;
+	}
+	header > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		right: 0;
+		text-decoration: none;
+		top: 0;
+		color: #5ddef4;
+		z-index: 999;
+		font-size: 2em;
+		border: 0;
+		margin-bottom: 10px;
+	}
+
+	header ul {
+		transition: max-height 0s var(--menu-delay), opacity var(--menu-delay), visibility 0s var(--menu-delay);
+	}
+
+	header [id="menu2"]:target ~ ul {
+		max-height: 100vh;
+		transition: opacity var(--menu-delay);
+	}
+
+	header [id="menu2"]:target {
+		color: #e53935;
+	}
+
+
+	header [id="menu2"]:not(:target) ~ ul {
+		max-height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	header [id="menu2"]:not(:target), header [id="menu2"]:target + a {
+		display: none;
+	}
+
+	article {
+		margin-top: -17px!important;
+	}
+
+	/* tolgo il margin right dal menu */
+	div#menu {
+		margin-right: 0!important;
+		padding-bottom: 20px;
+
+	}
+	#menu ul {
+		width: 100%!important;
+	}
+	/* METTO nel centro il menu home, about, giochi */
+	#nav > a {
+		border: none;
+		color: #FFF;
+		display: flex!important;
+		flex-direction: column;
+	    margin-left: 0!important; 
+		padding: 1.2em 1.2em;
+		letter-spacing: 0.06em;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.2em;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+	/* SISTEMO la altezza del header , banner */
+	#header.alt {
+		min-height: 60vh;
+	}
+}
+
+/* nascondo il hamburger sopra 414px */
+@media (min-width: 415px) {
+	header > a {
+		display: none;
+	}
+}
+.avatar {
+	border-radius: 33px;
+}
+/*************************************
+   END HAMBURGER MENU 
+*************************************/
+
+/*************************************
+   MEDIA QUERY GENERALI 
+*************************************/
+	@media screen and (max-width:414px){
+			.thumbnails {
+				display: block;
+			}
+
+				.thumbnails a {
+					margin: 0 2em 0 !important;
+					margin-bottom:30px !important;
+				}
+
+				.thumbnails > div {
+					display: block;
+					width: 60%;
+					margin:0 auto !important;
+				}
+
+					.thumbnails > div:last-child > :last-child {
+						margin-bottom: 0 !important;
+					}
+
+				.thumbnails h3 {
+					font-size: 1em;
+				}
+		
+			.avatar {
+				width: auto !important;
+				float: left;
+				margin: 0 auto;
+				max-width:100%;
+			}
+			#main > article {
+				left: 0 !important;
+				padding: 20px;
+			}
+			#wrapper {
+			max-width:100%;
+			padding:1em 0 0.1em 0;
+			}
+			#menu{
+				overflow:hidden;
+				margin-right:0 !important;
+			}
+					
+	}
+/*************************************
+  END MEDIA QUERY GENERALI 
+*************************************/
