@@ -1,6 +1,11 @@
 :root {
 	--menu-delay: .3s;
 }
+#menu li:hover a, #menu li.active a,
+#menu li.active span {
+	color:#e53935;
+	cursor:pointer;
+}
 /*************************************
    HAMBURGER MENU 
 *************************************/
