@@ -80,7 +80,7 @@
 	}
 	/* SISTEMO la altezza del header , banner */
 	#header.alt {
-		min-height: 60vh;
+		min-height: 75vh;
 	}
 }
 
