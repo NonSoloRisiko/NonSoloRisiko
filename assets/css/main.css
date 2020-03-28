@@ -2793,10 +2793,10 @@
 		}
 
 			#header.alt:before {
-				-moz-transition: background-color 3s ease;
-				-webkit-transition: background-color 3s ease;
-				-ms-transition: background-color 3s ease;
-				transition: background-color 3s ease;
+				-moz-transition: background-color 1s ease;
+				-webkit-transition: background-color 1s ease;
+				-ms-transition: background-color 1s ease;
+				transition: background-color 1s ease;
 				-moz-transition-delay: 1s;
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
